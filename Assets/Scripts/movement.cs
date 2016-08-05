@@ -10,12 +10,6 @@ public class movement : MonoBehaviour {
 
     public float jumpSpeed;
 
-    private Vector3 spawn;
-
-	// Use this for initialization
-	void Start () {
-        spawn = transform.position;
-	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -33,16 +27,6 @@ public class movement : MonoBehaviour {
             GetComponent<Rigidbody>().AddForce(jumpInput * jumpSpeed);
         }
 
-    }
-
-
-
-    void OnCollisionEnter(Collision other) {
-        if (other.gameObject.tag == "Enemy") {
-
-            print("bonjour");
-            transform.position = spawn;
-        }
     }
 
     void OnTriggerEnter(Collider other)

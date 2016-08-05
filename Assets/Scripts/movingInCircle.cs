@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
 public class movingInCircle : MonoBehaviour
 {
 
@@ -17,7 +16,13 @@ public class movingInCircle : MonoBehaviour
 
     void Update()
     {
-        v = Quaternion.AngleAxis(degreesPerSecond * Time.deltaTime, Vector3.down) * v;
-        //GetComponent<Rigidbody>().MoveRotation(v) = center.position + v;
+
+        //renvoit les coordonnées X,Y,Z de l'objet en mouvement circulaire à une vitesse donnée.
+        //Vector3.up est là pour indiquer l'axe Y
+        //On dirait que le quaternion est un mouvement circulaire à lui seul.
+
+        v = Quaternion.AngleAxis(degreesPerSecond * Time.deltaTime, Vector3.up) * v;
+        transform.position = center.position + v;
+
     }
 }

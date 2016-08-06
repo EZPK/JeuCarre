@@ -13,7 +13,7 @@ public class raycastForward : MonoBehaviour {
         RaycastHit hit;
         float theDistance;
 
-        Vector3 forward = transform.TransformDirection(Vector3.forward) *1000;
+        Vector3 forward = transform.TransformDirection(Vector3.up) *1000;
         Debug.DrawRay(transform.position, forward, Color.red);
 
         if (Physics.Raycast(transform.position, (forward), out hit))

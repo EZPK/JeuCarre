@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour {
 
     public static int currentLevel = 0;
 
-
     void Start()
     {
         DontDestroyOnLoad(gameObject);

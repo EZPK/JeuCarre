@@ -19,7 +19,7 @@ public class raycastForward : MonoBehaviour {
         if (Physics.Raycast(transform.position, (forward), out hit))
         {
             theDistance = hit.distance;
-            print("Objet touché" + " " + hit.collider.gameObject.name + " " + "distance" + " " + hit.distance);
+            //sprint("Objet touché" + " " + hit.collider.gameObject.name + " " + "distance" + " " + hit.distance);
         }
 	}
 }

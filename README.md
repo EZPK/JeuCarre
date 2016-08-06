@@ -11,8 +11,8 @@
 
 ### How to use it ?
 
-1) Download Unity3D at [unity3d.com](https://unity3d.com/)
-2) Clone this repository in your github folder
-3) Open **level1.unity** in **Assets/levels**
-4) Play
+1. Download Unity3D at [unity3d.com](https://unity3d.com/)
+2. Clone this repository in your github folder
+3. Open **level1.unity** in **Assets/levels**
+4. Play
 
